@@ -1,4 +1,3 @@
-import os
 from robyn import Robyn
 from robyn.authentication import AuthenticationHandler, BearerGetter, Identity
 
