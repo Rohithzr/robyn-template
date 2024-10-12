@@ -18,7 +18,7 @@ async def health():
     return {"status": "ok"}
 
 @app.post("/health")
-async def health():
+async def health_alt():
     return {"status": "ok"}
 
 @app.get("/auth/v1/login")
@@ -38,7 +38,7 @@ async def get_profile(request):
     return {"status": "ok"}
 
 @app.post("/auth/v1/profile", auth_required=True)
-async def get_profile(request):
+async def create_profile(request):
     return {"status": "ok"}
 
 @app.patch("/auth/v1/profile", auth_required=True)
